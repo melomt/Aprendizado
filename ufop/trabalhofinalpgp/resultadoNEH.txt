@@ -1,0 +1,30 @@
+-- Início da Heurística NEH Adaptada ---
+
+Passo 1 e 2: Sequência inicial EDD (Earliest Due Date):
+   [3, 5, 1, 6, 2, 4]
+
+Passo 3.1: A sequência inicial é composta pelo Job 3.
+
+Passo 3.2: Inserindo o Job 5...
+  Melhor posição: [3, 5] -> Atraso: 0 (Makespan: 50)
+
+Passo 3.3: Inserindo o Job 1...
+  Melhor posição: [3, 1, 5] -> Atraso: 0 (Makespan: 60)
+
+Passo 3.4: Inserindo o Job 6...
+  Melhor posição: [3, 1, 5, 6] -> Atraso: 2 (Makespan: 77)
+
+Passo 3.5: Inserindo o Job 2...
+  Melhor posição: [3, 1, 5, 6, 2] -> Atraso: 11 (Makespan: 89)
+
+Passo 3.6: Inserindo o Job 4...
+  Melhor posição: [3, 1, 5, 6, 2, 4] -> Atraso: 24 (Makespan: 103)
+
+--- Fim da Heurística NEH ---
+
+--- Resultados Finais ---
+Sequência de Jobs (nomes): [3, 1, 5, 6, 2, 4]
+Atraso Total da solução: 24
+Makespan gerado: 103
+
+Diagrama de Gantt salvo como 'gantt_neh_atraso.png'
